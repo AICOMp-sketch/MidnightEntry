@@ -1,0 +1,83 @@
+:root {
+  --bg-dark: #121212;
+  --card-dark: #1e1e1e;
+  --gold: #eabf49;
+  --text-light: #f7f7f7;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg-dark);
+  color: var(--text-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background: var(--card-dark);
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 6px 18px rgba(234, 191, 73, 0.2);
+  max-width: 600px;
+  width: 90%;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 2rem;
+  color: var(--gold);
+  letter-spacing: 1px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset {
+  border: 1px solid var(--gold);
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+}
+
+legend {
+  color: var(--gold);
+  font-weight: bold;
+  padding: 0 1rem;
+}
+
+input, select {
+  margin: 0.7rem 0;
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background: #2c2c2c;
+  color: var(--text-light);
+  transition: background 0.3s ease;
+}
+
+input:focus, select:focus {
+  background: #3c3c3c;
+}
+
+button {
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+  background: var(--gold);
+  color: #121212;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
