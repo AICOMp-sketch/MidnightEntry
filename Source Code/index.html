@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DarkStyle Sign-Up</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Create Your Account</h1>
+    <form id="signup-form">
+      <fieldset>
+        <legend>🔖 Basic Information</legend>
+        <input type="text" placeholder="Complete Name" required />
+        <input type="text" placeholder="Address" required />
+        <input type="number" placeholder="Age" required />
+        <input type="email" placeholder="Email" required />
+        <input type="tel" placeholder="Phone Number" required />
+        <select required>
+          <option value="" disabled selected>Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>🔐 Account Information</legend>
+        <input type="text" placeholder="Username" required />
+        <input type="password" placeholder="New Password" required />
+        <input type="password" placeholder="Confirm Password" required />
+      </fieldset>
+
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
